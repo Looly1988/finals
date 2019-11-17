@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+  text-decoration: none; 
+}
+
+  /*--------PHOTO CAROUSEL FIGURE-------*/
+
+figure {
+  width: 60vw;
+  /* height: 60vw; */
+  margin: 5vw auto;
+}  
+

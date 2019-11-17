@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- 
+    _   _   _   _   _     _   _   _   _   _   _   _  
+ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \ 
+( L | u | a | n | a ) ( M | a | n | c | u | s | o )
+ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/ 
+
+-->
+
+<!--         /\
+           ./  \.
+         . / /\ \ .
+        . / /••\ \ .
+        ./ /••••\ \.       THIS PAGE 
+       ././••••••\.\       WAS MADE
+     . / /••••••••\ \ .    BY LUANA
+    . / /••••••••••\ \ .
+    ./ /••••••••••••\ \.
+    /./••••••••••••••\.\ 
+   /_/.______________.\_\ 
+    /\\\\\\\\\\\\\\\\\\\
+-->  
+	<title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+
+    <!----------J QUERY LIBRARY VIA GOODGLE CDN----------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fotorama.css & fotorama.js. -->
+    <script type="text/javascript" src="../js/fotorama-4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/fotorama-4.6.4/fotorama.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+    $("#navToggle a").click(function(e){
+        e.preventDefault();
+ 
+        $("header > nav").slideToggle();
+        $("#logo").toggleClass("menuUp menuDown");
+    });
+ 
+    $(window).resize(function() {
+        if($( window ).width() >= "600") {
+            $("header > nav").css("display", "block");
+ 
+            if($("#logo").attr('class') == "menuDown") {
+                $("#logo").toggleClass("menuUp menuDown");
+            }
+        }
+        else {
+            $("header > nav").css("display", "none");
+        }
+    });
+ 
+    $("header > nav > ul > li > a").click(function(e) {
+        if($( window ).width() <= "600") {             if($(this).siblings().size() > 0 ) {
+                e.preventDefault();
+                $(this).siblings().slideToggle("fast")
+                $(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
+            }
+        }
+    });
+});
+        </script>
+</head>
+<body>
+
+    <img src="../img/plant.jpg" alt="Cactai" width="100%">
+
+    <section class="icon-bar">
+        <a href="https://www.facebook.com/sugartacola/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/sugartacola?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/sugartacola/?hl=en" class="fa fa-instagram"></a>
+    </section>
+
+<header>
+<div id="logo" class="menuUp">
+<div id="navToggle"><a href="#">Menu</a></div>
+</div>
+    <nav>
+        <ul>
+            <li><a href="../index.html" target="_self">Home</a></li>
+            <li><a href="">About</a></li>
+            <li>
+                <a href="../pages/menu.html" target="_self">Menu <span class="toggle">Expand</span><span class="caret"></span></a>
+    <nav>
+        <ul>
+            <li><a href="../pages/breakfast.html" target="_self">Breakfast</a></li>
+            <li><a href="../pages/lunch.html" target="_self">Lunch</a></li>
+            <li><a href="../pages/dinner.html" target="_self">Dinner</a></li>
+            <li><a href="../pages/desert.html" target="_self">Desert</a></li>
+        </ul>
+    </nav>
+            </li>
+            <li><a href="https://www.opentable.com/" target="_self">Reservations</a></li>
+            <li><a href="../pages/contact.html" target="_self">Contact</a></li>
+        </ul>
+    </nav>
+</header>    
+
+    <h1>Save the world just by eating tacos</h1>
+
+    <img src="../img/food-three.jpg" alt="About" class="center" width="60%">
+    <section>
+        <p>
+            Okay that might seem like a bit of a stretch, but it’s true, and you have to admit it’s fun to say. At Sugar Taco, we believe great food and great ethics go hand in hand. Our menu stays true to authentic Mexican flavors without any of the icky stuff that comes from animal products (like the deforestation, the heart disease, the killing animals, you know). We are proud tree huggers and we source our produce from local organic farmers.
+        </p>
+        </section>
+    
+    <section>
+        <p>
+            We'd love to keep talking about ourselves but...
+            We think mouths and hands are better put to work eating nachos and churros. Washed back with our delicious agua fresca of course. And a burrito for good measure. Oh, and the beans! The beans are really good. Maybe some soft serve or pan dulce. And the street corn! You have to try the street corn!
+        </p>
+    </section>
+	<section>
+        <p>
+            So to wrap it up...
+            (damn, now I’m thinking about burritos again), eating one meal at Sugar Taco •saves an animal’s life •spares 10 sq feet of forest •conserves 375 gallons of water •makes our moms proud •lowers your carbon footprint •feeds a starving child (we don’t mean you, bro) •plants trees (yeah, we do that).
+            So quit staring at your screen and start saving the world. See you at Sugar Taco. You can even wear a cape, we won’t judge.
+        </p>
+    </section>
+
+    <figure class="fotorama" data-width="100%">
+        <img src="../img/cocktails-two.jpg">
+        <img src="../img/food-two.jpg">
+        <img src="../img/food.jpg">
+        <img src="../img/drinks.png">
+        <img src="../img/jungle.jpg">
+    </figure>   
+
+    <footer>©El Coyote De Azúcar 2019</footer>
+
+</body>
+</html>

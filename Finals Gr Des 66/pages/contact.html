@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- 
+    _   _   _   _   _     _   _   _   _   _   _   _  
+ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \ 
+( L | u | a | n | a ) ( M | a | n | c | u | s | o )
+ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/ 
+
+-->
+
+<!--         /\
+           ./  \.
+         . / /\ \ .
+        . / /••\ \ .
+        ./ /••••\ \.       THIS PAGE 
+       ././••••••\.\       WAS MADE
+     . / /••••••••\ \ .    BY LUANA
+    . / /••••••••••\ \ .
+    ./ /••••••••••••\ \.
+    /./••••••••••••••\.\ 
+   /_/.______________.\_\ 
+    /\\\\\\\\\\\\\\\\\\\
+-->  
+	<title>Contact</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../css/contactform.css">
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+    $("#navToggle a").click(function(e){
+        e.preventDefault();
+ 
+        $("header > nav").slideToggle();
+        $("#logo").toggleClass("menuUp menuDown");
+    });
+ 
+    $(window).resize(function() {
+        if($( window ).width() >= "600") {
+            $("header > nav").css("display", "block");
+ 
+            if($("#logo").attr('class') == "menuDown") {
+                $("#logo").toggleClass("menuUp menuDown");
+            }
+        }
+        else {
+            $("header > nav").css("display", "none");
+        }
+    });
+ 
+    $("header > nav > ul > li > a").click(function(e) {
+        if($( window ).width() <= "600") {             if($(this).siblings().size() > 0 ) {
+                e.preventDefault();
+                $(this).siblings().slideToggle("fast")
+                $(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
+            }
+        }
+    });
+});
+        </script>
+</head>
+<body>
+
+    <img src="../img/plant.jpg" alt="Cactai" width="100%">
+
+    <section class="icon-bar">
+        <a href="https://www.facebook.com/sugartacola/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/sugartacola?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/sugartacola/?hl=en" class="fa fa-instagram"></a>
+    </section>
+
+<header>
+<div id="logo" class="menuUp">
+<div id="navToggle"><a href="#">Menu</a></div>
+</div>
+    <nav>
+        <ul>
+            <li><a href="../index.html" target="_self">Home</a></li>
+            <li><a href="../pages/about.html" target="_self">About</a></li>
+            <li>
+                <a href="../pages/menu.html" target="_self">Menu <span class="toggle">Expand</span><span class="caret"></span></a>
+    <nav>
+        <ul>
+            <li><a href="">Breakfast</a></li>
+            <li><a href="../pages/lunch.html" target="_self">Lunch</a></li>
+            <li><a href="../pages/dinner.html" target="_self">Dinner</a></li>
+            <li><a href="../pages/desert.html" target="_self">Desert</a></li>
+        </ul>
+    </nav>
+            </li>
+            <li><a href="https://www.opentable.com/" target="_self">Reservations</a></li>
+            <li><a href="../pages/contact.html" target="_self">Contact</a></li>
+        </ul>
+    </nav>
+</header>    
+
+    <h1>Restaurant</h1>
+
+    <aside class="logo"><img src="../img/Logo.png" alt="Logo" style="width:20vw;margin-left: -75px; margin-top: -133px;"></aside>
+
+    <section class="hours">HOURS OF OPERATION</section>
+ 
+ 	<section class="days">MONDAY: 6pm to 11pm</section> 
+    <section class="days">TUESDAY THRU FRIDAY: 6pm to 12am</section> 
+    <section class="days">SATURDAY: 5pm to 12am</section>
+    <section class="days">SUNDAY: 5pm to 11pm</section></section>
+    <section class="contact">For inqueries, reservtions or bookings call us at 323-593-7888 or visit us at our location on 7257 Melrose Avenue in beautiful and sunny Los Angeles, California.</section>
+    <section class="text">
+		Please note, at El Coyote De Azúcar we encourage smart, casual–elegant attire. We do not allow shorts, baseball caps, athletic apparel, tank tops, or flip flops.
+
+		For any and all questions, please fill out the form below.</section>
+
+    <h3>Contact Form</h3>
+
+<section class="contactform">
+  <form action="submit-form.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Your email address..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+
+	<footer>©El Coyote De Azúcar 2019</footer>	
+
+</body>
+</html>

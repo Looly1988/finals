@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+
+body {
+	background-color: #f06b6c;
+	font-family: aqua, sans-serif;
+	color: #99EE4E;
+}
+
+/* CUSTOM FONTS */
+
+@font-face {
+  font-family: beachsociety;
+  src: url("../fonts/BeachSociety.ttf");
+}
+
+@font-face {
+  font-family: aqua;
+  src: url("../fonts/aqua.ttf");
+} 
+
+
+/* Social Media Buttons*/
+
+  .icon-bar {
+  position: fixed;
+  display: inline-block;
+  top: 7%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  width: 52px;
+  font-size: 1.5vw;
+}
+
+.icon-bar a:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 11px 12.5px 11px 12.5px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 11px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 11px 11.5px 11px 11.5px;
+}
+
+/* LOGO PROPERTY */
+
+ .logo {
+  position: absolute;
+  margin-right: 10vw;
+  padding-left: 70vw;
+  padding-bottom: 2vw;
+}
+
+.logo img {
+  transition: transform 2s;
+       -moz-transition: transform 2s;
+       -ms-transition: transform 2s;
+       -o-transition: transform 2s;
+       -webkit-transition: transform 2s;
+}
+
+.logo img:hover {
+    transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+         -webkit-transform: rotate(90deg);
+}
+
+aside {
+    margin-top: 8vw;
+}
+
+/* HEADER */
+
+  h3 {
+  	font-family: 'beachsociety', sans-serif;
+  	font-size: 5vw;
+  	color: white;
+  	margin-top: 5vw;
+  	margin-bottom: 2vw;
+  	text-align: center;
+  }
+  
+
+ .hours {
+  	font-family: 'aqua', sans-serif;
+    text-decoration: underline;
+  	font-size: 1.5vw;
+  	color: white;
+    margin-left: 10vw;
+    padding-top: 5vw;
+  	padding-right: 10vw;
+  	line-height: 3vw;
+  }
+
+  .days {
+    font-family: 'aqua', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 1vw;
+    margin-left: 10vw;
+    padding-right: 10vw;
+    line-height: 3vw;
+  }
+
+  .contact {
+      margin-top: 10vw;
+  }
+
+
+/* CONTACT FORM */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding-left: 5vw;
+  padding: 1vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.1vw;
+  box-sizing: border-box;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #99EE4E;
+  color: #f06b6c;
+  padding: 1vw 1vw;
+  border: none;
+  border-radius: 0.6vw;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1a2d17;
+}
+
+.contactform {
+  padding-left: 23vw;
+  padding-right: 23vw;
+}
+
+/* FOOTER */
+
